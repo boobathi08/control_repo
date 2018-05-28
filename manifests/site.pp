@@ -1,6 +1,6 @@
 node default {
 file { '/root/test'
-ensure => 'present'
+ensure => 'file'
 content => "this is tesr file"
 }
 }

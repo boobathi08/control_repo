@@ -1,7 +1,5 @@
 node default {
-file { '/root/test':
-ensure => 'file',
-content => "this is test file
-",
 }
-}
+node 'master.puppet.vm' {
+ include role:master_server
+ }
